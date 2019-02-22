@@ -12,7 +12,7 @@ We collected data from 7 players. Based on their self-report information, we div
 
 ## Data Set
 
-new_data_all_7.mat is the tennis data set. It includes two files: all_data and all_data_label. all_data file includes the motion sensor data for each shot. all_data_label file includes the stroke types, outgoing ball speed, outgoing ball spin speed, incoming ball speed, and incoming ball spin speed for each shot. The structure of all_data file is shown in ![Fig.1](./Figures/all_data.jpg). The strucuture of all_data_label file is shown in ![Fig.2](./Figures/all_data_label.jpg).
+new_data_all_7.mat is the tennis data set. It includes two files: all_data and all_data_label. all_data file includes the motion sensor data for each shot. all_data_label file includes the stroke types, outgoing ball speed, outgoing ball spin speed, incoming ball speed, and incoming ball spin speed for each shot. The structure of all_data file is shown in ![Fig.1](./Figures/all_data.jpg). The strucuture of all_data_label file is shown in [Fig.2](./Figures/all_data_label.jpg).
 
 
 
