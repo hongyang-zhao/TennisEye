@@ -1,29 +1,28 @@
 ## TennisEye Overview
 
-TennisEye is a tennis ball speed calculation system. It is the first research publication to calculate the serve, groundstroke and volley speed of a tennis ball using a racket mounted motion sensor.
+TennisEye is a tennis ball speed calculation system. It is the first research publication to calculate the serve, groundstroke and volley speed of a tennis ball using a racket-mounted motion sensor.
 
 
 ## Data Collection
 
-The motion sensor we used is a [UG sensor](https://ubibrothers.wordpress.com/). It includes a triaxial acceleration sensor and a triaxial gyroscope. The measure range of the accelerometer and the gyroscope were set to be ± 16g and ± 2000◦/sec, respectively. Both sensors were sampled with 100 Hz. The UG sensor was fixed at the handle of the players’ rackets. The sensor position and the coordiante system is shown below![Fig.sensor_position](./Figures/sensor_position.jpg):
+The motion sensor we used is a [UG sensor](https://ubibrothers.wordpress.com/). It includes a triaxial acceleration sensor and a triaxial gyroscope. The measure range of the accelerometer and the gyroscope were set to be ± 16g and ± 2000◦/sec, respectively. Both sensors were sampled with 100 Hz. The UG sensor was fixed at the handle of the players’ rackets. The sensor position and the coordiante system is shown below:![Fig.sensor_position](./Figures/sensor_position.jpg)
 
-We collected data in a tennis court that was equipped with a [PlaySight system](https://playsight.com/), which included six high definition (HD) cameras. The PlaySight system uses image processing algorithm to recognize stroke type, ball speed, and spin speed, which serves as the ground truth.
+We collected data in a tennis court that was equipped with a [PlaySight system](https://playsight.com/), which included six high definition (HD) cameras. The PlaySight system uses image processing algorithm to recognize stroke type, ball speed, and spin speed, which serves as the ground truth. The birdview of the tennis court from a PlaySight camera is shown as below:![Fig.birdview](./Figures/birdview.jpg)
 
 
-We collected data from 7 players. Based on their self-report information, we divided the subjects into three categories: coach, regular player, and casual player. The coaches play several times per week, the regular players play one time per week, and the casual players play 0∼2 times per month. In total, we collected 569 serves, 1398 groundstrokes, and 18 volleys. The summary of the tennis dataset is shown below![Fig.zepp_dataset](./Figures/zepp_dataset.png)::
+We collected data from 7 players. Based on their self-report information, we divided the subjects into three categories: coach, regular player, and casual player. The coaches play several times per week, the regular players play one time per week, and the casual players play 0∼2 times per month. In total, we collected 569 serves, 1398 groundstrokes, and 18 volleys. The summary of the tennis dataset is shown below:![Fig.zepp_dataset](./Figures/zepp_dataset.jpg)
 
 
 ## Data Set
 
-new_data_all_7.mat is the tennis data set. It includes two files: all_data and all_data_label. all_data file includes the motion sensor data for each shot. all_data_label file includes the stroke types, outgoing ball speed, outgoing ball spin speed, incoming ball speed, and incoming ball spin speed for each shot. The structure of all_data file is shown in ![Fig.1](./Figures/all_data.jpg). The structure of all_data_label file is shown in ![Fig.2](./Figures/all_data_label.jpg).
+new_data_all_7.mat is the tennis data set. It includes two files: all_data and all_data_label. all_data file includes the motion sensor data for each shot. all_data_label file includes the stroke types, outgoing ball speed, outgoing ball spin speed, incoming ball speed, and incoming ball spin speed for each shot. The structure of all_data file is shown as below:![Fig.1](./Figures/all_data.jpg). The structure of all_data_label file is shown as below:![Fig.2](./Figures/all_data_label.jpg)
 
 
-## Files
-This repository contains the following files. You agree to the [Terms of Use for TennisEye Dataset](#terms-of-use-for-tenniseye-dataset) to download and use the files.
+## Source Codes
+We provide the following source codes:
 
 | Files | Description |
 | ----- | ----------- |
-| new_data_all_7.mat | tennis data set. |
 | evaluation_serve_LOSO_regression.m | leave-one-subject-out cross validation of our proposed regression model to calculate serve speed. |
 
 | evaluation_shots_LOSO_physical | leave-one-subject-out cross validation of our proposed physical model to calculate groundstroke/volley ball speed. |
