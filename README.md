@@ -3,7 +3,7 @@ TennisEye is a tennis ball speed calculation system. It is the first research pu
 
 
 ## Data Collection
-The motion sensor we used is a [UG sensor](https://ubibrothers.wordpress.com/). It includes a triaxial acceleration sensor and a triaxial gyroscope. The measure range of the accelerometer and the gyroscope were set to be ± 16g and ± 2000◦/sec, respectively. Both sensors were sampled with 100 Hz. The UG sensor was fixed at the handle of the players’ rackets. The sensor position and the coordiante system is shown below:![Fig.sensor_position](./Figures/sensor_position.jpg)
+The motion sensor we used was a [UG sensor](https://ubibrothers.wordpress.com/). It includes a triaxial acceleration sensor and a triaxial gyroscope. The measure range of the accelerometer and the gyroscope were set to be ± 16g and ± 2000◦/sec, respectively. Both sensors were sampled with 100 Hz. The UG sensor was fixed at the handle of the players’ rackets. The sensor position and the coordiante system is shown below:![Fig.sensor_position](./Figures/sensor_position.jpg)
 
 We collected data in a tennis court that was equipped with a [PlaySight system](https://playsight.com/), which included six high definition (HD) cameras. The PlaySight system uses image processing algorithm to recognize stroke type, ball speed, and spin speed, which serves as the ground truth. The birdview of the tennis court from a PlaySight camera is shown as below:![Fig.birdview](./Figures/birdview.jpg)
 
@@ -12,21 +12,22 @@ We collected data from 7 players. Based on their self-report information, we div
 
 
 ## Data Set
-new_data_all_7.mat![dataset](./Data and Codes/new_data_all_7.mat) is the tennis data set. It includes two files: all_data and all_data_label. all_data file includes the motion sensor data for each shot. The structure of all_data file is shown as below:![Fig.1](./Figures/all_data.jpg)
+[new_data_all_7.mat](./Data/new_data_all_7.mat) is the tennis data set. It includes two files: all_data and all_data_label. all_data file includes the motion sensor data for each shot. The structure of all_data file is shown as below:![Fig.1](./Figures/all_data.jpg)
 
-all_data_label file includes the stroke type, outgoing ball speed, outgoing ball spin speed, incoming ball speed, and incoming ball spin speed for each shot. We use number 0 to 4 to stand for five stroke types. 0 is serve; 1 is forehand groundstroke; 2 is backhand groundstroke; 3 is forehand volley; 4 is backhand volley. The structure of all_data_label file is shown as below.  [Fig.2](./Figures/all_data_label.jpg)
+all_data_label file includes the stroke type, outgoing ball speed, outgoing ball spin speed, incoming ball speed, and incoming ball spin speed for each shot. We use number 0 to 4 to stand for five stroke types. 0 is serve; 1 is forehand groundstroke; 2 is backhand groundstroke; 3 is forehand volley; 4 is backhand volley. The structure of all_data_label file is shown as below:![Fig.2](./Figures/all_data_label.jpg)
+
 
 
 ## Source Codes
-We provide the following source codes:
+The source codes are shown as below:
 
 | Files | Description |
 | ----- | ----------- |
-| evaluation_serve_LOSO_regression.m | Run leave-one-subject-out cross validation of our proposed regression model to calculate serve speed. |
-| evaluation_shots_LOSO_physical | Run leave-one-subject-out cross validation of our proposed physical model to calculate groundstroke/volley ball speed. |
-| evaluation_shots_LOSO_regression | Run leave-one-subject-out cross validation of our proposed regression model to calculate groundstroke/volley ball speed. |
-| find_begin_and_end_index | The function to calculate the start and end time of impact process. |
-| two_side_interpolation_gy | The function to interpolate the gyroscope readings in Y-axis if saturation happens. |
+| [evaluation_serve_LOSO_regression.m](./Codes/evaluation_serve_LOSO_regression.m) | Run leave-one-subject-out cross validation of our proposed regression model to calculate serve speed. |
+| [evaluation_shots_LOSO_physical.m](./Codes/evaluation_shots_LOSO_physical.m) | Run leave-one-subject-out cross validation of our proposed physical model to calculate groundstroke/volley ball speed. |
+| [evaluation_shots_LOSO_regression.m](./Codes/evaluation_shots_LOSO_regression.m) | Run leave-one-subject-out cross validation of our proposed regression model to calculate groundstroke/volley ball speed. |
+| [find_begin_and_end_index.m](./Codes/find_begin_and_end_index.m) | The function to calculate the start and end time of impact process. |
+| [two_side_interpolation_gy.m](./Codes/two_side_interpolation_gy.m) | The function to interpolate the gyroscope readings in Y-axis if saturation happens. |
 
 
 ## Terms of Use for TennisEye Dataset
