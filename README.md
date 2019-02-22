@@ -5,9 +5,12 @@ TennisEye is a tennis ball speed calculation system. It is the first research pu
 
 ## Data Collection
 
-The motion sensor we used is a [UG sensor](https://ubibrothers.wordpress.com/). It includes a triaxial acceleration sensor and a triaxial gyroscope. The measure range of the accelerometer and the gyroscope were set to be ± 16g and ± 2000◦/sec, respectively. Both sensors were sampled with 100 Hz. The UG sensor was fixed at the handle of the players’ rackets. Fig. 2 shows the sensor position and the coordinate system. We collected data in a tennis court that was equipped with a [PlaySight system](https://playsight.com/), which included six high definition (HD) cameras. The PlaySight system uses image processing algorithm to recognize stroke type, ball speed, and spin speed. 
+The motion sensor we used is a [UG sensor](https://ubibrothers.wordpress.com/). It includes a triaxial acceleration sensor and a triaxial gyroscope. The measure range of the accelerometer and the gyroscope were set to be ± 16g and ± 2000◦/sec, respectively. Both sensors were sampled with 100 Hz. The UG sensor was fixed at the handle of the players’ rackets. The sensor position and the coordiante system is shown below![Fig.sensor_position](./Figures/sensor_position.jpg):
 
-We collected data from 7 players. Based on their self-report information, we divided the subjects into three categories: coach, regular player, and casual player. The coaches play several times per week, the regular players play one time per week, and the casual players play 0∼2 times per month. In total, we collected 569 serves, 1398 groundstrokes, and 18 volleys. The summary of the tennis dataset is shown below:
+We collected data in a tennis court that was equipped with a [PlaySight system](https://playsight.com/), which included six high definition (HD) cameras. The PlaySight system uses image processing algorithm to recognize stroke type, ball speed, and spin speed, which serves as the ground truth.
+
+
+We collected data from 7 players. Based on their self-report information, we divided the subjects into three categories: coach, regular player, and casual player. The coaches play several times per week, the regular players play one time per week, and the casual players play 0∼2 times per month. In total, we collected 569 serves, 1398 groundstrokes, and 18 volleys. The summary of the tennis dataset is shown below![Fig.zepp_dataset](./Figures/zepp_dataset.png)::
 
 
 ## Data Set
