@@ -17,13 +17,11 @@ all_data{2} = temp_data{3};
 all_data{3} = temp_data{4};
 all_data{4} = temp_data{5};
 all_data{5} = temp_data{6};
-% all_data{6} = temp_data{1};
 all_data_label{1} = temp_label{2};
 all_data_label{2} = temp_label{3};
 all_data_label{3} = temp_label{4};
 all_data_label{4} = temp_label{5};
 all_data_label{5} = temp_label{6};
-% all_data_label{6} = temp_label{1};
 
 WINDOW = 100;
 
@@ -47,8 +45,6 @@ for i = 1:USER_NUM
     train_array(test_id) = [];
     
     num = 0;
-    num_forehand = 0;
-    num_backhand = 0;
     HF_input = zeros(1,1);
     HF_output = zeros(1,1);
     estimated_e = zeros(1,1);
@@ -111,7 +107,6 @@ for id = 1:USER_NUM
     real_array = zeros(1,1);
     for j = 1:length(all_data{id})
         shot_type = all_data_label{id}{j}(1);
-        flag = all_data_label{id}{j}(9);
         incoming_speed = all_data_label{id}{j}(4);
         outgoing_speed = all_data_label{id}{j}(2);
         if outgoing_speed ~= 0
@@ -146,7 +141,6 @@ for id = 1:USER_NUM
             HF_k = HF_k_array(id);
             HF_b = HF_b_array(id);
     
-            
             HF_momentum = (HF_k * M * az(hit_index-1) + HF_b)*(end_index - hit_index + 1)*det_time;
             
             num = num + 1;

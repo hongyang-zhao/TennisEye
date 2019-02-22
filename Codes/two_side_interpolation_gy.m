@@ -1,6 +1,5 @@
 function [ret_gy] = two_side_interpolation(gy)
-%TWO_SIDE_INTERPOLATION Summary of this function goes here
-%   Detailed explanation goes here
+%   Interpolate the gyroscope readings in Y-axis if saturation happens.
 MIN_GY_VALUE = -2000;
 index = find(gy==MIN_GY_VALUE);
 if ~isempty(index)

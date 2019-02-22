@@ -45,11 +45,9 @@ all_data_label = temp_label;
 WINDOW = 100;
 Radius = 0.8;
 %% parameter:
-k_array = zeros(1,USER_NUM);%[0.02546,0.02835,0.02402, 0.02392];
-b_array = zeros(1,USER_NUM);%[11.98,6.703,13.62,16.47];
+k_array = zeros(1,USER_NUM);
+b_array = zeros(1,USER_NUM);
 
-       
-all_serve = zeros(1,1);
 num_all = 0;
 %% train
 for i = 1:USER_NUM
@@ -65,9 +63,7 @@ for i = 1:USER_NUM
         for j = 1:length(all_data{id})
             shot_type = all_data_label{id}{j}(1);
             incoming_speed = all_data_label{id}{j}(4);
-            flag = all_data_label{id}{j}(9);
-             if (shot_type == 0) %&& flag == 2
-                
+             if (shot_type == 0)
                 ax = all_data{id}{j}(:,1);
                 ay = all_data{id}{j}(:,2);
                 az = all_data{id}{j}(:,3);
@@ -84,8 +80,6 @@ for i = 1:USER_NUM
                 x_array(num,:) = abs(gy(hit_index)*Radius);
                 y_array(num,:) = all_data_label{id}{j}(2);
                 num_all = num_all + 1;
-                all_serve(num_all,1) = abs(gy(hit_index)*Radius);
-                all_serve(num_all,2) = all_data_label{id}{j}(2);
             end
         end
     end
@@ -104,9 +98,7 @@ for id = 1:USER_NUM
     for j = 1:length(all_data{id})
         shot_type = all_data_label{id}{j}(1);
         incoming_speed = all_data_label{id}{j}(4);
-        flag = all_data_label{id}{j}(9);
-        if (shot_type == 0) %&& flag == 2
-            
+        if (shot_type == 0)
             ax = all_data{id}{j}(:,1);
             ay = all_data{id}{j}(:,2);
             az = all_data{id}{j}(:,3);

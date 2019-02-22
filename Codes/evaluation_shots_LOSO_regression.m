@@ -44,9 +44,8 @@ for i = 1:USER_NUM
         for j = 1:length(all_data{id})
             shot_type = all_data_label{id}{j}(1);
             incoming_speed = all_data_label{id}{j}(4);
-            flag = all_data_label{id}{j}(9);
             outgoing_speed = all_data_label{id}{j}(2);
-             if (shot_type == 1 || shot_type == 2) && outgoing_speed ~= 0 %&& flag == 2
+             if (shot_type == 1 || shot_type == 2) && outgoing_speed ~= 0 
                 ax = all_data{id}{j}(:,1);
                 ay = all_data{id}{j}(:,2);
                 az = all_data{id}{j}(:,3);
@@ -80,7 +79,6 @@ for id = 1:USER_NUM
         shot_type = all_data_label{id}{j}(1);
         incoming_speed = all_data_label{id}{j}(4);
         outgoing_speed = all_data_label{id}{j}(2);
-        flag = all_data_label{id}{j}(9);
         if (shot_type == 1 || shot_type == 2) && outgoing_speed ~= 0 %&& flag == 2
             
             ax = all_data{id}{j}(:,1);

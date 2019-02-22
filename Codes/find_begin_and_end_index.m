@@ -1,6 +1,5 @@
 function [begin_index,end_index,flag] = find_begin_and_end_index(gy)
-%FIND_FIRST_PEAK Summary of this function goes here
-%   Detailed explanation goes here
+% Find the start and end times of impact process.
 begin_index = 0;
 end_index = 0;
 flag = 1;
@@ -31,20 +30,6 @@ while abs(gy(end_index-1)) >= abs(gy(end_index))
     end
     end_index = end_index + 1;
 end
-
-
-% if gy(begin_index) > 0
-%    gy = -gy; 
-% end
-% end_index = begin_index + 1;
-% while gy(end_index-1) < gy(end_index)
-%     if end_index == 100
-%         flag = 0;
-%         break;
-%     end
-%     end_index = end_index + 1;
-% end
-
 
 end_index = end_index - 1;
 if end_index - begin_index > 20
