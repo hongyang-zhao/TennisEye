@@ -17,7 +17,6 @@ We collected data from 7 players. Based on their self-report information, we div
 all_data_label file includes the stroke type, outgoing ball speed, outgoing ball spin speed, incoming ball speed, and incoming ball spin speed for each shot. We use number 0 to 4 to stand for five stroke types. 0 is serve; 1 is forehand groundstroke; 2 is backhand groundstroke; 3 is forehand volley; 4 is backhand volley. The structure of all_data_label file is shown as below:![Fig.2](./Figures/all_data_label.jpg)
 
 
-
 ## Source Codes
 The source codes are shown as below:
 
@@ -26,7 +25,7 @@ The source codes are shown as below:
 | [evaluation_serve_LOSO_regression.m](./Codes/evaluation_serve_LOSO_regression.m) | Run leave-one-subject-out cross validation of our proposed regression model to calculate serve speed. |
 | [evaluation_shots_LOSO_physical.m](./Codes/evaluation_shots_LOSO_physical.m) | Run leave-one-subject-out cross validation of our proposed physical model to calculate groundstroke/volley ball speed. |
 | [evaluation_shots_LOSO_regression.m](./Codes/evaluation_shots_LOSO_regression.m) | Run leave-one-subject-out cross validation of our proposed regression model to calculate groundstroke/volley ball speed. |
-| [find_begin_and_end_index.m](./Codes/find_begin_and_end_index.m) | The function to calculate the start and end time of impact process. |
+| [find_begin_and_end_index.m](./Codes/find_begin_and_end_index.m) | The function to calculate the start and end times of impact process. |
 | [two_side_interpolation_gy.m](./Codes/two_side_interpolation_gy.m) | The function to interpolate the gyroscope readings in Y-axis if saturation happens. |
 
 
