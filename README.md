@@ -2,6 +2,10 @@
 TennisEye is a tennis ball speed calculation system. It is the first research publication to calculate the serve, groundstroke and volley speed of a tennis ball using a racket-mounted motion sensor.
 
 
+## Cite the Paper
+Hongyang Zhao, Shuangquan Wang, Gang Zhou, and Woosub Jung. "TennisEye: Tennis Ball Speed Estimation using a Racket-mounted Motion Sensor." In 2019 18th ACM/IEEE Conference on Information Processing in Sensor Networks (IPSN). IEEE, 2019.
+
+
 ## Data Collection
 The motion sensor we used was a [UG sensor](https://ubibrothers.wordpress.com/). It includes a triaxial acceleration sensor and a triaxial gyroscope. The measure range of the accelerometer and the gyroscope were set to be ± 16g and ± 2000◦/sec, respectively. Both sensors were sampled with 100 Hz. The UG sensor was fixed at the handle of the players’ rackets. The sensor position and the coordiante system is shown below:![Fig.sensor_position](./Figures/sensor_position.jpg)
 
@@ -29,7 +33,7 @@ The source codes are shown as below:
 | [two_side_interpolation_gy.m](./Codes/two_side_interpolation_gy.m) | The function to interpolate the gyroscope readings in Y-axis if saturation happens. |
 
 
-## Terms of Use for TennisEye Dataset and Source Code
+## Terms of Use for TennisEye Dataset and Source Codes
 
 You need to read and agree to the following terms of use to download and use the TennisEye dataset.
 
@@ -39,21 +43,21 @@ You need to read and agree to the following terms of use to download and use the
 >
 >“Data Team”: means the employees and students at the College of William and Mary who are working on the TennisEye dataset;
 >
->“TennisEye Dataset and Source Code”: means the tennis data collected by the Data Team and the source code written by the Data Team;
+>“TennisEye Dataset and Source Codes”: means the tennis data collected by the Data Team and the source code written by the Data Team;
 >
 >“Licensee”, “You”, “Your”, “Yours”: means the person or entity acquiring a license hereunder for access to and use of the TennisEye Dataset.
 
 >
 >`2. Grant of License`
 >
->The College of William and Mary hereby grants to You a non-exclusive, non-transferable, revocable license to use the TennisEye Dataset and Source Code solely for Your non-commercial, educational, and research purposes only, but without any right to copy or reproduce, publish or otherwise make available to the public or communicate to the public, sell, rent or lend the whole or any constituent part of the TennisEye Dataset and Source Code thereof. The TennisEye Dataset and Source Code shall not be redistributed without the express written prior approval of the College of William and Mary You agree to respect the privacy of those human subjects whose sign gesture data are included in the TennisEye Dataset and Source Code. Do not attempt to reverse the anonymization process to identify specific identifiers including, without limitation, names, postal address information, telephone numbers, e-mail addresses, social security numbers, and biometric identifiers. You agree not to reverse engineer, separate or otherwise tamper with the TennisEye Dataset and Source Code so that data can be extracted and used outside the scope of that permitted in this Agreement.
+>The College of William and Mary hereby grants to You a non-exclusive, non-transferable, revocable license to use the TennisEye Dataset and Source Codes solely for Your non-commercial, educational, and research purposes only, but without any right to copy or reproduce, publish or otherwise make available to the public or communicate to the public, sell, rent or lend the whole or any constituent part of the TennisEye Dataset and Source Codes thereof. The TennisEye Dataset and Source Codes shall not be redistributed without the express written prior approval of the College of William and Mary You agree to respect the privacy of those human subjects whose sign gesture data are included in the TennisEye Dataset and Source Codes. Do not attempt to reverse the anonymization process to identify specific identifiers including, without limitation, names, postal address information, telephone numbers, e-mail addresses, social security numbers, and biometric identifiers. You agree not to reverse engineer, separate or otherwise tamper with the TennisEye Dataset and Source Codes so that data can be extracted and used outside the scope of that permitted in this Agreement.
 >
->You agree to acknowledge the source of the TennisEye Dataset and Source Code in all of Your publications and presentations based wholly or in part on the TennisEye Dataset and Source Code. You agree to provide a disclaimer in any publication or presentation to the effect that the College of William and Mary does not bear any responsibility for Your analysis or interpretation of TennisEye Dataset and Source Code.
+>You agree to acknowledge the source of the TennisEye Dataset and Source Codes in all of Your publications and presentations based wholly or in part on the TennisEye Dataset and Source Codes. You agree to provide a disclaimer in any publication or presentation to the effect that the College of William and Mary does not bear any responsibility for Your analysis or interpretation of TennisEye Dataset and Source Codes.
 >
->You agree and acknowledge that the College of William and Mary may hold, process, and store any personal data submitted by You for validation and statistical purposes and for the purposes of the administration and management of TennisEye Dataset and Source Code. You agree that any personal data submitted by You is accurate to the best of his or her knowledge.
+>You agree and acknowledge that the College of William and Mary may hold, process, and store any personal data submitted by You for validation and statistical purposes and for the purposes of the administration and management of TennisEye Dataset and Source Codes. You agree that any personal data submitted by You is accurate to the best of his or her knowledge.
 >
->The College of William and Mary provides the TennisEye Dataset and Source Code "AS IS," without any warranty or promise of technical support, and disclaims any liability of any kind for any damages whatsoever resulting from use of the TennisEye Dataset and Source Code.
+>The College of William and Mary provides the TennisEye Dataset and Source Codes "AS IS," without any warranty or promise of technical support, and disclaims any liability of any kind for any damages whatsoever resulting from use of the TennisEye Dataset and Source Codes.
 >
 >THE COLLLEGE OF WILLIAM AND MARY MAKES NO WARRANTIES, EXPRESS OR IMPLIED WITH RESPECT TO THE SIGNFI DATASET, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, WHICH ARE HEREBY EXPRESSLY DISCLAIMED.
 >
->Your acceptance and use of the TennisEye Dataset and Source Code binds you to the terms and conditions of this License as stated herein.
+>Your acceptance and use of the TennisEye Dataset and Source Codes bind you to the terms and conditions of this License as stated herein.
