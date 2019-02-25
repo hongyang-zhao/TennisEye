@@ -3,7 +3,7 @@ TennisEye is a tennis ball speed calculation system. It is the first research pu
 
 
 ## Cite the Paper
-Hongyang Zhao, Shuangquan Wang, Gang Zhou, and Woosub Jung. "TennisEye: Tennis Ball Speed Estimation using a Racket-mounted Motion Sensor." In 2019 18th ACM/IEEE Conference on Information Processing in Sensor Networks (IPSN). IEEE, 2019.
+Hongyang Zhao, Shuangquan Wang, Gang Zhou, and Woosub Jung. "TennisEye: Tennis Ball Speed Estimation using a Racket-mounted Motion Sensor." In the 18th ACM/IEEE Conference on Information Processing in Sensor Networks (IPSN), 2019.
 
 
 ## Data Collection
